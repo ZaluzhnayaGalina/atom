@@ -289,6 +289,10 @@ Method body **{ … }**
 1. Download http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 2. Look inside jdk directory
+```
+> ls jdk8/bin/
+```
+java, javac, javap, jar
 
 #HSLIDE
 ## JDK/JRE/JVM
@@ -312,13 +316,6 @@ JVM + Lang + Libs
 #HSLIDE 
 ## From source to running program
 <img src="lecture01/presentation/assets/img/codeflow.png" alt="me" style="width: 750px; float: left;"/>  
-
-#HSLIDE 
-## JDK contents
-```
-> ls jdk8/bin/
-```
-java, javac, javap, jar
 
 #HSLIDE 
 ## JDK setup *nix
