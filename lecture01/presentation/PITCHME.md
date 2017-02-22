@@ -286,7 +286,7 @@ Method body **{ … }**
 
 #HSLIDE
 # JDK Setup
-1. Download http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
 
 2. Look inside jdk directory
 ```
@@ -318,10 +318,8 @@ JVM + Lang + Libs
 <img src="lecture01/presentation/assets/img/codeflow.png" alt="me" style="width: 750px; float: left;"/>  
 
 #HSLIDE 
-## JDK setup *nix
-1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
-
-2. set **path** and **JAVA_HOME** environment variables  
+## JDK setup *nix 
+set **path** and **JAVA_HOME** environment variables  
 **Linux:**
 ```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
@@ -345,9 +343,7 @@ JVM + Lang + Libs
 
 #HSLIDE 
 ## JDK setup Windows
-1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
-
-2. [только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(  
+[только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(  
 Изменения подхватятся терминалом только после перезапуска терминала
 ```bat
 > echo %PATH%
