@@ -565,7 +565,7 @@ do not need installation ([details](https://gradle.org/install)), just use:
 - manage dependencies between projects  
   
 build configuration is contained in **build.gradle**  
-gradle settings are defined in *gradle.settings*  
+gradle settings are defined in **gradle.settings**  
 
 #HSLIDE
 ## Gradle workflow
@@ -618,7 +618,9 @@ It tracks all branches and pull requests
 2. Make pull request to course repository
 [https://github.com/rybalkinsd/atom](https://github.com/rybalkinsd/atom)
 3. Make sure tests are passing in travis  
-**5 balls**
+
+**Deadline:** 1 March
+**Mark:** **5 balls**
 
 #HSLIDE
 ## Литература
