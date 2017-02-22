@@ -378,7 +378,6 @@ public class HelloWorld {
 ```bash
 > javac HelloWorld.java
 ```
-This will produce HelloWorld.class with byte-code
 
 2. Run program with **java**
 ```bash
