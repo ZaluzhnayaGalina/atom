@@ -97,21 +97,24 @@ https://atom.mail.ru/
 **Защита проекта - обязательный критерий получения сертификата**
 
 #HSLIDE
+## Вопросы по организации курса?
+
+#HSLIDE
 # Agenda
 1. Course structure  
 2. Language architecture  
-3. Basic syntax  
-4. Gradle  
-5. Git  
+3. Basic syntax
+4. Git    
+5. Gradle  
 6. Homework 1  
 
 #HSLIDE 
 # 2. Language architecture 
 1. Course structure  
 2. **[Language architecture]**  
-3. Basic syntax  
-4. Gradle  	
-5. Git  
+3. Basic syntax
+4. Git    
+5. Gradle  	
 6. Homework 1  
 
 #HSLIDE
@@ -147,9 +150,9 @@ https://atom.mail.ru/
 # 3. Basic syntax 
 1. Course structure  
 2. Language architecture  
-3. **[Basic syntax]**  
-4. Gradle  
-5. Git  
+3. **[Basic syntax]**    
+4. Git  
+5. Gradle
 6. Homework 1  
 
 #HSLIDE 
@@ -375,6 +378,7 @@ Compile program
 ```bash
 > javac HelloWorld.java
 ```
+This will produce HelloWorld.class with byte-code
 
 Run program
 ```bash
@@ -382,13 +386,45 @@ Run program
 Hello, World!
 ```
 
+#HSLIDE
+## Byte-code
+Let's look inside HelloWorld.class
+```bash
+> javap -c HelloWorld.class
+Compiled from "HelloWorld.java"
+```
+```
+public class HelloWorld {
+  public HelloWorld();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #3                  // String Hello, World!
+       5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: return
+}
+```
+$HSLIDE
+## Java distribution
+Multiple **.class** files are not handy for distribution
+(what if our project is big and we want to use a number of libraries)
+  
+So they use java archives (**jar**) that contain all necessary class files and custom content
+
+(Later in course)
+
 #HSLIDE 
 # 5. Git 
 1. Course structure  
 2. Language architecture  
 3. Basic syntax  
-4. Gradle  
-5. **[Git]**  
+4. **[Git]**  
+5. Gradle  
 6. Homework 1  
 
 #HSLIDE 
@@ -495,8 +531,8 @@ master
 1. Course structure  
 2. Language architecture  
 3. Basic syntax  
-4. **[Gradle]**  
-5. Git  
+4. Git  
+5. **[Gradle]**  
 6. Homework 1  
 
 #HSLIDE
@@ -505,42 +541,77 @@ https://gradle.org/
 **Gradle** - build automation system  
 Like **maven** but more powerful  
 do not need installation, just use:
-```bash
+[details](https://gradle.org/install)
+
+**Windows:**
+```bat
 > gradlew.bat
 ```
-https://gradle.org/install
+**Windows:**
+```bash
+> ./gradlew
+```
+
+#GSLIDE
+## What grandle can
+- build/test/jar ... your project
+- support custom build stages, configurable with **groovy**
+- manage dependencies (automatacally download)
+- manage dependencies between projects  
+  
+build configuration is contained in **build.gradle**  
+gradle settings are defined in *gradle.settings*  
 
 #HSLIDE
-# Gradle workflow
-https://guides.gradle.org/creating-java-applications/
-gradle assemble
-gradle check
-TODO
+## Gradle workflow
+https://guides.gradle.org/creating-java-applications/  
+  
+To build project from scratch, run tests and checkstyle:
+**linux/macOS:**
+```
+> ./gradlew clean build
+```
+**Windows:**
+```
+> gradlew.bat clean build
+```
+
+#HSLIDE
+## Gardle checkstyle plugin
+[https://docs.gradle.org/current/userguide/checkstyle_plugin.html](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)
 
 #HSLIDE
 # Travis  
 Continuous Integration Tool  
 [https://travis-ci.org/](https://travis-ci.org/)  
-When you push to repository - travis automatically runs on his server
+When you push to repository - Travis automatically runs on his server
 gradle build  
 It tracks all branches and pull requests
-[https://travis-ci.org/rybalkinsd/atom/pull_requests](https://travis-ci.org/rybalkinsd/atom/pull_requests)
+[https://travis-ci.org/rybalkinsd/atom/pull_requests](https://travis-ci.org/rybalkinsd/atom/pull_requests)  
+
+**check your pull requests there!**
+**all tests must pass!**
 
 #HSLIDE 
 # 6. Homework 1 
 1. Course structure  
 2. Language architecture  
 3. Basic syntax  
-4. Gradle  
-5. Git  
+4. Git  
+5. Gradle  
 6. **[Homework 1]**  
 
 #HSLIDE
 # Homework 1
 1. Fix tests in branch homework1
+//TODO ref to branch
 2. Make pull request to course repoitory
 [https://github.com/rybalkinsd/atom](https://github.com/rybalkinsd/atom)
+3. Make sure tests are passing in travis
 **5 balls**
 
 #HSLIDE
-## Оставьте обратную связь в анкете для обратной связи. Это важно!
+## Оставьте обратную связь
+(вам на почту придет анкета)  
+
+**Это важно!**
