@@ -418,7 +418,7 @@ So they use java archives (**jar**) that contain all necessary class files and c
 (Later in course)
 
 #HSLIDE 
-# 5. Git 
+# 4. Git 
 1. Course structure  
 2. Language architecture  
 3. Basic syntax  
@@ -509,7 +509,7 @@ master
 > git pull
 ```
 
-# HSLIDE
+#HSLIDE
 ## Github workflow
 1. **Fork** project
 2. **clone** forked project
@@ -532,7 +532,7 @@ master
 
 
 #HSLIDE 
-# 4. Gradle 
+# 5. Gradle 
 1. Course structure  
 2. Language architecture  
 3. Basic syntax  
@@ -614,8 +614,7 @@ It tracks all branches and pull requests
 
 #HSLIDE
 # Homework 1
-1. Fix tests in branch homework1
-//TODO ref to branch
+1. Fix tests in branch **homework1**
 2. Make pull request to course repository
 [https://github.com/rybalkinsd/atom](https://github.com/rybalkinsd/atom)
 3. Make sure tests are passing in travis  
@@ -630,7 +629,7 @@ It tracks all branches and pull requests
 
 #HSLIDE
 ## IDE
-**Intellij IDEA**
+**Intellij IDEA**  
 [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)  
   
 **Community edition** будет достаточно, но для студентов часто бесплатно предоставляют **professional edition**
