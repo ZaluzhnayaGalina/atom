@@ -290,6 +290,9 @@ Method body **{ … }**
 
 2. Look inside jdk directory
 ```
+> ls jdk8/
+```
+```
 > ls jdk8/bin/
 ```
 java, javac, javap, jar
