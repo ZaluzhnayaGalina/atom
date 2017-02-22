@@ -97,7 +97,7 @@ https://atom.mail.ru/
 **Защита проекта - обязательный критерий получения сертификата**
 
 #HSLIDE
-## Вопросы по организации курса?
+### Вопросы по организации курса?
 
 #HSLIDE
 # Agenda
@@ -371,15 +371,14 @@ public class HelloWorld {
 
 #HSLIDE 
 # compile and run
-**javac** - java compiler
 
-1. Compile program
+1. Compile program with **javac**
 ```bash
 > javac HelloWorld.java
 ```
 This will produce HelloWorld.class with byte-code
 
-2. Run program
+2. Run program with **java**
 ```bash
 > java HelloWorld
 Hello, World!
@@ -390,9 +389,9 @@ Hello, World!
 Let's look inside HelloWorld.class
 ```bash
 > javap -c HelloWorld.class
+```
+```
 Compiled from "HelloWorld.java"
-```
-```
 public class HelloWorld {
   public HelloWorld();
     Code:
@@ -428,12 +427,14 @@ So they use java archives (**jar**) that contain all necessary class files and c
 
 #HSLIDE 
 # Git
-Distributed version control system
+Distributed **version control system**
 Install git  
 [https://git-scm.com/](https://git-scm.com/)
 
-Wi will just cover basic commands  
-To better understand git - get some course
+How it is different from **svn**?
+
+(We will just cover basic commands  
+To better understand git - get some course)
 
 #HSLIDE
 ## Fork repository and set upstream
@@ -580,8 +581,13 @@ To build project from scratch, run tests and checkstyle:
 ```
 
 #HSLIDE
-## Gradle checkstyle plugin
-[https://docs.gradle.org/current/userguide/checkstyle_plugin.html](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)
+## Checkstyle
+There exist verbose [styleguide](https://google.github.io/styleguide/javaguide.html) from google
+  
+To make it easier we added "checkstyle" to our **gradle** build
+[https://docs.gradle.org/current/userguide/checkstyle_plugin.html](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)  
+  
+So your code will not build unless style is correct :)
 
 
 #HSLIDE
@@ -615,20 +621,22 @@ It tracks all branches and pull requests
 **5 balls**
 
 #HSLIDE
-**Литература**
-**Thinking in Java** (в русском переводе - философия Java)
-https://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486  
+## Литература
+**Thinking in Java** (в русском переводе - философия Java)  
+[https://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486](https://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486)  
   
 Хорошая книга, придерживаться ее мы, конечно не будем
 
 #HSLIDE
-## Оставьте обратную связь
-(вам на почту придет анкета)  
-
-**Это важно!**
+## IDE
+**Intellij IDEA**
+[https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)  
+  
+**Community edition** будет достаточно, но для студентов часто бесплатно предоставляют **professional edition**
 
 #HSLIDE
-## Оставьте обратную связь
+## Ура! Праздники!
+**Оставьте обратную связь**
 (вам на почту придет анкета)  
 
 **Это важно!**
