@@ -118,7 +118,7 @@ https://atom.mail.ru/
 6. Homework 1  
 
 #HSLIDE
-## Java domain
+# Java domain
 ### Java dominates areas:
 - Back-end for enterprise-scale solutions
 - Android (specific area)  
@@ -206,8 +206,7 @@ if (commonVarialbe > -42) { // ← начало блока
 */
 ```
 #HSLIDE
-#if else
-As in c
+##if else
 ```java
 if (18 == yourAge) {
     // у вас всё хорошо
@@ -374,13 +373,13 @@ public class HelloWorld {
 # compile and run
 **javac** - java compiler
 
-Compile program
+1. Compile program
 ```bash
 > javac HelloWorld.java
 ```
 This will produce HelloWorld.class with byte-code
 
-Run program
+2. Run program
 ```bash
 > java HelloWorld
 Hello, World!
@@ -409,7 +408,7 @@ public class HelloWorld {
        8: return
 }
 ```
-$HSLIDE
+#HSLIDE
 ## Java distribution
 Multiple **.class** files are not handy for distribution
 (what if our project is big and we want to use a number of libraries)
@@ -429,8 +428,12 @@ So they use java archives (**jar**) that contain all necessary class files and c
 
 #HSLIDE 
 # Git
-1. Install git  
+Distributed version control system
+Install git  
 [https://git-scm.com/](https://git-scm.com/)
+
+Wi will just cover basic commands  
+To better understand git - get some course
 
 #HSLIDE
 ## Fork repository and set upstream
@@ -447,7 +450,7 @@ So they use java archives (**jar**) that contain all necessary class files and c
 > cd atom
 > git remote add upstream https://github.com/rybalkinsd/atom.git
 ```
-3. Проверим, что синхронизация включена (интересны 2 последние строки)
+3. Проверим, что синхронизация включена
 ```bash
 > git remote -v
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
@@ -475,7 +478,7 @@ master
 ```bash
 > git checkout lecture1
 ```
-Создать ветку lecture1
+Создать ветку new-branch
 ```bash
 > git checkout -b new-branch
 ```
@@ -540,8 +543,8 @@ master
 https://gradle.org/
 **Gradle** - build automation system  
 Like **maven** but more powerful  
-do not need installation, just use:
-[details](https://gradle.org/install)
+do not need installation ([details](https://gradle.org/install)), just use:
+
 
 **Windows:**
 ```bat
@@ -552,7 +555,7 @@ do not need installation, just use:
 > ./gradlew
 ```
 
-#GSLIDE
+#HSLIDE
 ## What grandle can
 - build/test/jar ... your project
 - support custom build stages, configurable with **groovy**
@@ -566,7 +569,7 @@ gradle settings are defined in *gradle.settings*
 ## Gradle workflow
 https://guides.gradle.org/creating-java-applications/  
   
-To build project from scratch, run tests and checkstyle:
+To build project from scratch, run tests and checkstyle:  
 **linux/macOS:**
 ```
 > ./gradlew clean build
@@ -577,15 +580,16 @@ To build project from scratch, run tests and checkstyle:
 ```
 
 #HSLIDE
-## Gardle checkstyle plugin
+## Gradle checkstyle plugin
 [https://docs.gradle.org/current/userguide/checkstyle_plugin.html](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)
+
 
 #HSLIDE
 # Travis  
 Continuous Integration Tool  
 [https://travis-ci.org/](https://travis-ci.org/)  
-When you push to repository - Travis automatically runs on his server
-gradle build  
+
+When you push to repository - Travis automatically runs gradle build on server
 It tracks all branches and pull requests
 [https://travis-ci.org/rybalkinsd/atom/pull_requests](https://travis-ci.org/rybalkinsd/atom/pull_requests)  
 
@@ -605,10 +609,23 @@ It tracks all branches and pull requests
 # Homework 1
 1. Fix tests in branch homework1
 //TODO ref to branch
-2. Make pull request to course repoitory
+2. Make pull request to course repository
 [https://github.com/rybalkinsd/atom](https://github.com/rybalkinsd/atom)
-3. Make sure tests are passing in travis
+3. Make sure tests are passing in travis  
 **5 balls**
+
+#HSLIDE
+**Литература**
+**Thinking in Java** (в русском переводе - философия Java)
+https://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486  
+  
+Хорошая книга, придерживаться ее мы, конечно не будем
+
+#HSLIDE
+## Оставьте обратную связь
+(вам на почту придет анкета)  
+
+**Это важно!**
 
 #HSLIDE
 ## Оставьте обратную связь
